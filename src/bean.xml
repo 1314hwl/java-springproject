@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+	<!-- 三种方式注册bean -->
+	<!-- 第一种 -->
+	<bean id="personService" class="cn.com.service.impl.PersonServiceBean"></bean>
+	<!-- 第二种 -->
+	<bean id="personService2" class="cn.com.service.impl.BeanFactory" factory-method="createBean"></bean>
+</beans>
