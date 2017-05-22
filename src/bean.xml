@@ -4,8 +4,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
 	<!-- 三种方式注册bean -->
-	<!-- 第一种 -->
-	<bean id="personService" class="cn.com.service.impl.PersonServiceBean"></bean>
-	<!-- 第二种 -->
-	<bean id="personService2" class="cn.com.service.impl.BeanFactory" factory-method="createBean"></bean>
+	<!-- 第1种：普通的方式获取bean -->
+	<bean id="personService" class="cn.com.service.impl.PersonServiceBean"
+		lazy-init="true" init-method="init" destroy-method="destory"></bean>
+	<!-- 第2种：可以理解为从类BeanFactory的createBean静态方法中获取bean -->
+	<bean id="personService2" class="cn.com.service.impl.BeanFactory"
+		factory-method="createBean" lazy-init="true"></bean>
+	<!-- 第3种：可以理解为从类BeanFactory的createBean2方法中获取bean,scope作用域范围：默认为singleton单例,prototype每次创建新实例 -->
+	<bean id="beanFactory" class="cn.com.service.impl.BeanFactory"></bean>
+	<bean id="personService3" factory-bean="beanFactory"
+		factory-method="createBean2" scope="prototype"></bean>
 </beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<!-- 1.属性方式注入，优点可以多个地方使用 -->
+	<bean id="personDao" class="cn.com.dao.impl.PersonDaoBean"></bean>
+	<bean id="personService100" class="cn.com.service.impl.PersonServiceBean2">
+		<property name="pd" ref="personDao"></property>
+	</bean>
+	<!-- 2.内部bean的方式注入，优点书写简单 -->
+	<bean id="personService101" class="cn.com.service.impl.PersonServiceBean2">
+		<property name="pd">
+			<bean class="cn.com.dao.impl.PersonDaoBean"></bean>
+		</property>
+	</bean>
+</beans>

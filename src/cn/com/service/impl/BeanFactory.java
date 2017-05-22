@@ -14,4 +14,7 @@ public class BeanFactory {
 		return new PersonServiceBean();
 	}
 
+	public PersonServiceBean createBean2() {
+		return new PersonServiceBean();
+	}
 }
