@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<bean id="personDao" class="cn.com.dao.impl.PersonDaoBean"></bean>
+	<bean id="personService104" class="cn.com.service.impl.PersonServiceBean4">
+		<constructor-arg index="0" value="zhangsan"></constructor-arg>
+		<constructor-arg index="1" value="30"></constructor-arg>
+		<constructor-arg index="2" type="cn.com.dao.PersonDao"
+			ref="personDao"></constructor-arg>
+
+	</bean>
+</beans>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+	<bean id="personService102" class="cn.com.service.impl.PersonServiceBean3">
+		<property name="name" value="test"></property>
+		<property name="age" value="20"></property>
+		<property name="sets">
+			<set>
+				<value>zhangsan</value>
+				<value>lisi</value>
+				<value>wangwu</value>
+			</set>
+		</property>
+		<property name="mobiles">
+			<list>
+				<value>android</value>
+				<value>apple</value>
+				<value>windowsMobile</value>
+			</list>
+		</property>
+		<property name="p">
+			<props>
+				<prop key="key1">value1</prop>
+				<prop key="key2">value2</prop>
+				<prop key="key3">value3</prop>
+			</props>
+		</property>
+		<property name="maps">
+		    <map>
+		        <entry key="key4" value="value4"></entry>
+		        <entry key="key5" value="value5"></entry>
+		        <entry key="key6" value="value6"></entry>
+		    </map>
+		</property>
+	</bean>
+</beans>
