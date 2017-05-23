@@ -65,5 +65,8 @@
 	<classpathentry kind="lib" path="E:/DevelopTools/web/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-websocket-4.2.2.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="E:/DevelopTools/web/log4j-1.2.17/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="E:/DevelopTools/web/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/DevelopTools/web/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="E:/DevelopTools/web/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="E:/DevelopTools/web/aspectjweaver.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
