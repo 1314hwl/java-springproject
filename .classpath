@@ -68,5 +68,8 @@
 	<classpathentry kind="lib" path="E:/DevelopTools/web/aopalliance-1.0.jar"/>
 	<classpathentry kind="lib" path="E:/DevelopTools/web/aspectjrt.jar"/>
 	<classpathentry kind="lib" path="E:/DevelopTools/web/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="E:/DevelopTools/web/commons-dbcp-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/DevelopTools/web/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="E:/DevelopTools/web/mysql-connector-java-5.1.7-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
